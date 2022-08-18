@@ -1,0 +1,10 @@
+import fatty_gen as fg
+a = input("How many carbon atoms are in the chain? ")
+chain_length = int(a)
+b = input("What is the position of the double bond? ")
+double_bond = int(b)
+c = input("Is the orientation of the double bond E, Z or unspecified? ")
+orientation=str(c)
+SMILES = fg.fatty_gen(chain_length,double_bond,orientation)
+print(SMILES)
+input("Press return to close the window.")
